@@ -1,0 +1,190 @@
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+    color-scheme: dark light;
+    hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+    min-height: 100svh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+    max-width: var(--p-max-width, 65ch);
+    text-wrap: pretty;
+}
+
+/*  */
+
+.main {
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    background-color: #1D2B53;
+    padding-top: 2vw;
+}
+
+a.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 1vw;
+    /* margin-top: 2vw; */
+}
+
+a.logo span {
+    font-size: 2vw;
+}
+
+.myBtn {
+    padding: 0.75vw 1.75vw;
+    font-size: 1.21vw;
+    font-weight: 500;
+    background-color: #124E78;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 1; */
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0vw auto;
+    max-width: 80%;
+    margin-top: 3vw;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.container section.head {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #ff004d;
+    padding: 0.75vw;
+}
+
+section.head .elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+section.head .elem .box {
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: 0.5vw 0.75vw;
+    vertical-align: middle;
+    background: #fff;
+    color: #000;
+    line-height: 1vw;
+    border-radius: 0.25rem;
+}
+
+section.head .elem h2 {
+    vertical-align: middle;
+}
+
+.container section.body {
+    width: 100%;
+    padding: 2vw;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    gap: .5vw;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.bubble {
+    width: 2.75vw;
+    height: 2.75vw;
+    background-color: #FAEF5D;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    background-color: #e2d952;
+}
+
+.body .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/22;
+    width: 100%;
+    color: #000;
+}
+
+.body .result h1 {
+    font-size: 2.1rem;
+}
+
+.body .result h3 {
+    font-size: 1.5rem;
+    margin: 1vw 0vw;
+}
+
+.body .result h3 span {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #F2BB05;
+}
