@@ -4,7 +4,7 @@ A fun and interactive bubble popping game built using **HTML, CSS, and JavaScrip
 This is a practice project to improve DOM manipulation, event handling, and basic game logic.
 
 ## 🔗 Live Demo
-👉 https://jve021.github.io/bubble/
+👉 https://jve021.github.io/bubble-game/bubble/
 
 ## 🕹️ How to Play
 - Hit the bubble that matches the number shown in **Hit**
